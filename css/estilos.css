@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Hind Madurai";
+}
+
+body {
+  font-family: "Hind Madurai", sans-serif;
+  background: rgb(21,20,41);
+  background: linear-gradient(148deg, rgba(21,20,41,1) 0%, rgba(49,49,49,1) 82%, rgba(84,74,41,1) 100%);
+}
+
+body ul{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: calc(100% - 2rem);
+  max-width: 68.75em;
+  margin: 0 auto;
+}
+
+#principal-html .ps-container{
+  margin: 0 auto;
+  max-width: 1450px;
+  display: flex;
+}
+
+.ps-nav{
+  background: #000;
+  height: 80em;
+  position: sticky;
+  top: 0;
+}
+
+.ps-nav nav{
+    display: flex;
+    width: 18.75em;
+    padding-left: 4em;
+    flex-direction: column;
+    gap: 5em;
+}
+button{
+  background: none;
+}
+.ps-logo{
+  padding-top: 4em;
+}
+.ps-logo img{
+  width: 125px;
+  height: auto;
+}
+
+.ps-nav ul{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  align-items: flex-start;
+}
+
+.ps-nav ul li a {
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0.05em;
+}
+
+.ps-nav ul li a:hover {
+  color: #FBE330;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  transition:ease-in-out 5ms;
+}
+
+.ps-nav ul li a span {
+  color: #FBE330;
+}
+
+.ps-nav ul li a span:hover {
+  color: #fdf9e9;
+}
+.nav-menu li{
+  width: 100%;
+}
+
+.nav-menu li .active{
+  color: #FBE330;
+  border-right: 4px solid #FBE330;
+  font-weight: 500;
+}
+
+nav .card-body{
+  width: 12em;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+nav .card-body h5{
+  color: #FBE330;
+  font-size: 1.2em;
+}
+
+nav .card-body h6, p{
+  color: white !important;
+}
+
+.ps-team {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.ps-team .active{
+  border-right: 4px solid #FBE330;
+}
+
+.ps-team a{
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.ps-team .active{
+  border-right: 5px solid #FBE330;
+  color: #FBE330;
+}
+.ps-team a:hover{
+  color: #FBE330;
+}
+
+.ps-content{
+  background-color: #1e1e1e;
+  padding: 3.125em !important;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8em;
+}
+
+.ps-content .search-box{
+  display: flex;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 50px;
+  flex: 1 0 0;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 30px;
+}
+.ps-content .search-box span{
+  color: #000;
+}
+
+.ps-content .search-box input{
+  background-color: white;
+  border: none;
+  width: 100%;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: .8em;
+}
+
+.ps-content .btn-search{
+  padding: 10px 30px;
+  font-size: .8em;
+  background: #FBE330;
+  border-radius: 50px;
+}
+
+.ps-content .user-box{
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+
+.ps-content .user-box h5{
+  color: white;
+}
+
+
+/*login-register-cerrarsesion*/
+.login, .register{
+  display: flex;
+  align-items: center;
+  gap: 5em;
+  align-self: stretch;
+  flex-direction: column;
+}
+
+.login .form-login, #formLogin, .form-register{
+  display: flex;
+  flex-direction: column;
+  gap: 3.125em;
+  width: 37.5em;
+}
+
+.head-form{
+  color: #FFF;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+}
+.login .form-login #formLogin .login-txt, .register-txt, #formRegister{
+  display: flex;
+  flex-direction: column;
+  gap:30px
+}
+
+.contInput{
+  display: flex;
+  flex-direction: column;
+  gap: .313em;
+}
+
+.contInput label{
+  color: #FBE330;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.contInput input{
+  border-radius: 10px;
+  background: #CBCBCB;
+  padding: 10px 20px;
+}
+
+.divBtn .btnEnviar{
+  padding: 10px 30px;
+  font-size: .8em;
+  background: #FBE330;
+  border-radius: 50px;
+}
+
+.btnLogin {
+  color: #fff;
+  background-color: #FBE330;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.btnRegister {
+  color: #FBE330;
+  cursor: pointer;
+}
+
+.btnCerrarSesion,
+.btnRegistrar {
+  color: #000;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: .8em;
+  background: #FBE330;
+  padding: 10px 30px;
+  align-items: center;
+}
+
+.btnCerrarSesion span{
+  color: #000;
+}
+
+
+.contact {
+  color: #fdfdfa;
+}
+
+.end {
+  background: #FBE330;padding: 10px 20px;
+  background-color: #FBE330;
+  color: rgb(10, 10, 10);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.end:hover {
+  background-color: #f7f5f5;
+}
+.end:active {
+  background-color: #fefdff;
+}
+
+
+
+/* Estilo para el botón de enviar */
+.btn-primary {
+  background-color: #007bff; /* Color de fondo */
+  border-color: #007bff; /* Color del borde */
+  color: #fff; /* Color del texto */
+  border-radius: 10px; /* Borde redondeado */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Cambio de color de fondo al pasar el ratón */
+  border-color: #0056b3; /* Cambio de color del borde al pasar el ratón */
+}
+
+/* Estilo para los enlaces dentro del texto del formulario */
+a {
+  color: #007bff; /* Color del enlace */
+}
+
+a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* Estilo para los botones de registro */
+.btn-secondary {
+  margin: 5px; /* Margen entre botones */
+}
+
+/* Estilo para los íconos de los botones de registro */
+.btn-floating i {
+  font-size: 18px; /* Tamaño del ícono */
+}
+
+/* Estilos para el carousel */
+    #carouselExampleInterval {
+      max-width: auto; /* Ancho máximo del carousel */
+      margin: 0 auto; /* Centra el carousel horizontalmente */
+    }
+
+    .carousel-inner .carousel-item img {
+      max-height: 400px; /* Altura máxima de las imágenes del carousel */
+      object-fit: cover; /* Ajusta el tamaño de las imágenes sin deformarlas */
+    }
+  .fancy-heading small.text-muted {
+    color: #6c757d; /* Color de texto secundario */
+  }
+   /* Default height for small devices */
+   #intro-example {
+    height: 400px;
+  }
+
+  /* Height for devices larger than 992px */
+  @media (min-width: 992px) {
+    #intro-example {
+      height: 600px;
+    }
+  }
+
+  /* Estilo para el título de la tarjeta */
+.card-title {
+  color: #333; /* Color del texto */
+  font-size: 1.5rem; /* Tamaño de fuente */
+  margin-bottom: 1rem; /* Espacio inferior */
+}
+
+/* Estilo para el texto de la tarjeta */
+.card-text {
+  color: #666; /* Color del texto */
+  font-size: 1rem; /* Tamaño de fuente */
+}
+.card-body {
+  max-width: 100%; /* Limitar el ancho máximo */
+  padding: 1rem; 
+}
+
+
+/* Estilo para el botón */
+.btn-primary {
+  background-color: #007bff; /* Color de fondo */
+  border-color: #007bff; /* Color del borde */
+  color: #fff; /* Color del texto */
+  font-size: 1rem; /* Tamaño de fuente */
+  padding: 0.5rem 1rem; /* Relleno */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Cambio de color de fondo al pasar el ratón */
+  border-color: #0056b3; /* Cambio de color del borde al pasar el ratón */
+}
+
+.ps-content .btn-info{
+  padding: 5px 30px;
+  font-size: .8em;
+  background: #FBE330;
+  border-radius: 50px;
+}
+
+/*Content Home*/
+.ps-content .galleries-component{
+  display: grid;
+  grid-template-columns: 66.6666666667% calc(33.3333333333% - 1.5rem);
+  gap: 1.5rem;
+  place-content: space-between;
+}
+.ps-content h2 a{
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ps-content .section-title{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column: 1 / -1;
+  align-items: baseline;
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+  font-size: 2.25rem;
+}
+
+.ps-content .galleries-component .post-gallery{
+  place-self: flex-end;
+}
+
+.galleries-component .post-gallery:nth-child(2) {
+  grid-row: 2 / 4;
+}
+
+.galleries-component .post-gallery a {
+  color: #FFF;
+}
+
+.post-gallery {
+  display: grid;
+  row-gap: 6px;
+  align-items: end;
+  position: relative;
+}
+
+.post-gallery .img-a {
+  display: grid;
+  position: relative;
+}
+
+.post-gallery .img-a img{
+  max-width: 100%;
+  height: auto;
+}
+
+.post-gallery .title-kicker {
+  color: var(--font-color-3);
+  background: var(--bg-color-6);
+  background: linear-gradient(0, rgba(0, 0, 0, .8) 40%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  gap: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Trends */
+
+.ps-content .trend{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.ps-content .trend .card-body{
+  background: #333;
+}
+
+.ps-content .trend .card-title{
+  text-transform: uppercase;
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+/*Video*/
+.ps-content .video-component{
+  display: flex;
+  background: black;
+  padding: 50px;
+  gap: 50px;
+}
+.ps-content .video-component .logo-juego{
+  width: 300px;
+  height: auto;
+}
+
+
+/* Footer */
+footer .ps-footer {
+    border-top: 1px solid white!important;
+    margin-top: 50px;
+}
+
+footer h6, span, p, i, a {
+  color: white;
+}
+
+footer .copy{
+  border-top: 1px solid rgb(255, 255, 255);
+  color: white;
+  font-size: 1.45rem;
+}
+
+
+.abrir-menu{
+  display: none;
+}
+
+.ps-content .ps-logo{
+  display: none;
+}
+
+.nav-menu{
+  display: flex;
+}
+
+.cerrar-menu{
+  display: none;
+}
+
+.terminos {
+  color: #f7fcf5; 
+}
+
+.terminos:hover {
+  color:#b7e831;
+  text-decoration: underline;
+}
+
+
+
+/* Media queries*/
+
+@media only screen and (max-width: 800px) {
+  .ps-content {
+    padding: 1.2em !important;
+  }
+  .abrir-menu{
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+  .ps-content .ps-logo{
+    display: block;
+    padding-top: 0em;
+  }
+  .ps-logo img {
+    width: 80px;
+    height: auto;
+  }
+  .nav-menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .btnCerrarSesion{
+    padding: 5px 30px;
+  }
+  .cerrar-menu{
+    display: block;
+    position: absolute;
+    left: 250px;
+    padding-top: 50px;
+  }
+  .visualizar{
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .ps-nav{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+  }
+
+  /*Login*/
+  .login img{
+    width: 40%;
+  }
+  .login, .register {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .login .form-login, #formLogin, .form-register {
+    width: 100%;
+}
+  /*Login*/
+
+  /*Register*/
+  .register img{
+    width: 40%;
+  }
+  /*Register*/
+
+  .ps-content .galleries-component {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+  .ps-content .video-component .logo-juego{
+    width: 60%;
+    height: auto;
+  }
+
+  .ps-content .video-component {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+
+  .ps-content .video-component .video iframe{
+    width: 100%;
+    height: auto;
+  }
+
+  .trend .row{
+    gap:10px
+  }
+}

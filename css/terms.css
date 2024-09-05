@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Hind Madurai";
+}
+
+body {
+  font-family: "Hind Madurai", sans-serif;
+  background: rgb(21,20,41);
+  background: linear-gradient(148deg, rgba(21,20,41,1) 0%, rgba(49,49,49,1) 82%, rgba(84,74,41,1) 100%);
+}
+
+.terms{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.terms .head-terms{
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    text-align: start;
+}
+
+.terms h5{
+    color: #979696;
+}
+
+.terminos {
+    color: #f7fcf5; 
+  }
+  
+  .terminos:hover {
+    color:#b7e831;
+    text-decoration: underline;
+  }
+
+@media only screen and (max-width: 800px) {
+    .terms {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .terms .head-terms{
+        font-size: 20px;
+    }
+  }
